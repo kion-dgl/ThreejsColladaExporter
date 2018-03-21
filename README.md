@@ -10,21 +10,21 @@ Still a very early version. Only supports SkinnedMesh, with a single material, a
 Example code using [File Saver](https://github.com/eligrey/FileSaver.js) to download a blob from the browser to the client pc.
 
 ```
-  // Generate Mesh
+// Generate Mesh
   
-	var mesh = new THREE.SkinnedMesh(geometry, material);
-	var rootBone = armSkeleton.bones[0];
-	mesh.add(rootBone);
-	mesh.bind(armSkeleton);
+var mesh = new THREE.SkinnedMesh(geometry, material);
+var rootBone = armSkeleton.bones[0];
+mesh.add(rootBone);
+mesh.bind(armSkeleton);
   
-  // Export
+// Export
   
-  var expt = new THREE.ColladaExporter();
-	var output = expt.parse(mesh);
-	var blob = new Blob([output], {
-		type: "model/vnd.collada+xml"
-	});
-  saveAs(blob, mesh.name + '.dae');
+var expt = new THREE.ColladaExporter();
+var output = expt.parse(mesh);
+var blob = new Blob([output], {
+	type: "model/vnd.collada+xml"
+});
+saveAs(blob, mesh.name + '.dae');
 ```
 
 ### Example
