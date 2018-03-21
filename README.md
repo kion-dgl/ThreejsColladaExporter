@@ -3,7 +3,7 @@ There are many resources for exporting to Threejs but not many resources for exp
 
 ### Issues
 
-Still a very early version. Only supports SkinnedMesh, with a single material, and must use Geometry and now BufferGeometry.
+Still a very early version. Only supports SkinnedMesh, with a single material, a single texture, and must use Geometry and not BufferGeometry.
 
 ### Sample
 
